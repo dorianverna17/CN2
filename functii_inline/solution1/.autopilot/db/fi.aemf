@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1643377751849">
+  <ports id="1" name="a" type="PortType" originalName="a" coreId="1702129263" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="b" type="PortType" originalName="b" coreId="1702129263" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="c" type="PortType" originalName="c" coreId="0" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="21" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="23" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="24" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="27" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="28" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="31" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@ports.2"/>
+  <edges id="32" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.4"/>
+  <blocks id="18" name="fi" type="BlockType">
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="b_read" lineNumber="9" originalName="b" fileName="functii_inline/functii_inline.cpp" fileDirectory=".." coreId="2003125840" contextFuncName="fi" bitwidth="1" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="functii_inline/functii_inline.cpp" linenumber="9" fileDirectory="D:\Facultate\Anul3\CN2" functionName="fi"/>
+      <dataInputObjs>b</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="a_read" lineNumber="9" originalName="a" fileName="functii_inline/functii_inline.cpp" fileDirectory=".." coreId="0" contextFuncName="fi" bitwidth="1" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="functii_inline/functii_inline.cpp" linenumber="9" fileDirectory="D:\Facultate\Anul3\CN2" functionName="fi"/>
+      <dataInputObjs>a</dataInputObjs>
+      <dataOutputObjs>xor</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="xor_ln6" lineNumber="6" originalName="a" fileName="functii_inline/functii_inline.cpp" fileDirectory=".." rtlName="xor_ln6_fu_47_p2" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="INV1" bitwidth="1" opcode="xor" m_display="0" m_topoIndex="3" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="functii_inline/functii_inline.cpp" linenumber="6" fileDirectory="D:\Facultate\Anul3\CN2" functionName="INV1"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="and_ln2" lineNumber="2" fileName="functii_inline/functii_inline.cpp" fileDirectory=".." rtlName="c" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="AND1" bitwidth="1" opcode="and" m_display="0" m_delay="0.97" m_topoIndex="4" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="functii_inline/functii_inline.cpp" linenumber="2" fileDirectory="D:\Facultate\Anul3\CN2" functionName="AND1"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>xor</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="c_write_ln15" lineNumber="15" fileName="functii_inline/functii_inline.cpp" fileDirectory=".." coreId="0" contextFuncName="fi" opcode="write" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="functii_inline/functii_inline.cpp" linenumber="15" fileDirectory="D:\Facultate\Anul3\CN2" functionName="fi"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataOutputObjs>c</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="_ln16" lineNumber="16" fileName="functii_inline/functii_inline.cpp" fileDirectory=".." coreId="0" contextFuncName="fi" opcode="ret" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="functii_inline/functii_inline.cpp" linenumber="16" fileDirectory="D:\Facultate\Anul3\CN2" functionName="fi"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="functii_inline/functii_inline.cpp">
+      <validLinenumbers>9</validLinenumbers>
+      <validLinenumbers>6</validLinenumbers>
+      <validLinenumbers>2</validLinenumbers>
+      <validLinenumbers>15</validLinenumbers>
+      <validLinenumbers>16</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <expressionNodes realName="and_ln2_fu_53">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln6_fu_47">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="a_read_read_fu_34">
+    <nodeIds>13</nodeIds>
+  </ioNodes>
+  <ioNodes realName="b_read_read_fu_28">
+    <nodeIds>12</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln15_write_fu_40">
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioPorts name="a">
+    <contents name="read">
+      <nodeIds>13</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="b">
+    <contents name="read">
+      <nodeIds>12</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="c">
+    <contents name="write">
+      <nodeIds>16</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+    </states>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="fi" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>18</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

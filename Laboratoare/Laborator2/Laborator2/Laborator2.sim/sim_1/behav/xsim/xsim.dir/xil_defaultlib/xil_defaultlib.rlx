@@ -1,0 +1,10 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+D:/Facultate/Anul3/CN2/Laboratoare/Laborator2/Laborator2/Laborator2.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+D:/Facultate/Anul3/CN2/Laboratoare/Laborator2/Laborator2/Laborator2.srcs/sim_1/new/d_flip_flop_tb.v,1635193149,verilog,,,,d_flip_flop_tb,,,,,,,,
+D:/Facultate/Anul3/CN2/Laboratoare/Laborator2/Laborator2/Laborator2.srcs/sources_1/new/d_flip_flop.v,1635191545,verilog,,D:/Facultate/Anul3/CN2/Laboratoare/Laborator2/Laborator2/Laborator2.srcs/sim_1/new/d_flip_flop_tb.v,,d_flip_flop,,,,,,,,
+D:/Facultate/Anul3/CN2/Laboratoare/Laborator2/Laborator2/Laborator2.srcs/sources_1/new/halfadder.v,1635187222,verilog,,D:/Facultate/Anul3/CN2/Laboratoare/Laborator2/Laborator2/Laborator2.srcs/sources_1/new/sumatorComplet.v,,halfadder,,,,,,,,
+D:/Facultate/Anul3/CN2/Laboratoare/Laborator2/Laborator2/Laborator2.srcs/sources_1/new/sumatorComplet.v,1635186705,verilog,,D:/Facultate/Anul3/CN2/Laboratoare/Laborator2/Laborator2/Laborator2.srcs/sources_1/new/sumatorComplet_tb.v,,sumatorComplet,,,,,,,,
+D:/Facultate/Anul3/CN2/Laboratoare/Laborator2/Laborator2/Laborator2.srcs/sources_1/new/sumatorComplet_tb.v,1635187425,verilog,,,,sumatorComplet_tb,,,,,,,,

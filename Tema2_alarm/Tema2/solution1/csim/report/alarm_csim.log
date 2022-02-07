@@ -1,0 +1,17 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../alarm_house_tb.cpp in debug mode
+   Generating csim.exe
+O
+O E1 
+O E2 
+O E3 
+O E01 
+O E02 
+Not active!
+Not active!
+Not active!
+Not active!
+Test trecut cu succes!
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

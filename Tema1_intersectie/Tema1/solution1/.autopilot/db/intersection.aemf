@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1643394116473">
+  <ports id="1" name="Stg" type="PortType" originalName="Stg" coreId="2" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="D" type="PortType" originalName="D" coreId="229" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="S" type="PortType" originalName="S" coreId="26" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="J" type="PortType" originalName="J" coreId="149" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="Regula" type="PortType" originalName="Regula" coreId="1702129263" bitwidth="32" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="6" name="EW" type="PortType" originalName="EW" coreId="1702129263" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="7" name="NS" type="PortType" originalName="NS" coreId="0" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="81" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="83" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="85" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="87" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="88" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="89" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="90" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="91" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="92" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="93" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="94" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="95" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="96" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="99" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@ports.4"/>
+  <edges id="102" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="103" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="106" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="107" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="108" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="109" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="110" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="111" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="112" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="113" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="114" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="115" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="116" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="117" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="118" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="119" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="120" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="121" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="122" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="124" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@ports.4"/>
+  <edges id="127" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="128" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="129" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="130" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="131" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="132" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="134" source_obj="//@blocks.7/@node_objs.0" sink_obj="//@ports.4"/>
+  <edges id="137" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.7/@node_objs.1"/>
+  <edges id="139" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.8/@node_objs.0"/>
+  <edges id="141" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.8/@node_objs.0"/>
+  <edges id="143" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.8/@node_objs.0"/>
+  <edges id="146" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.8/@node_objs.0"/>
+  <edges id="149" source_obj="//@blocks.8/@node_objs.1" sink_obj="//@ports.5"/>
+  <edges id="150" source_obj="//@blocks.8/@node_objs.0" sink_obj="//@blocks.8/@node_objs.1"/>
+  <edges id="151" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.8/@node_objs.2"/>
+  <edges id="152" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.8/@node_objs.2"/>
+  <edges id="153" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.8/@node_objs.3"/>
+  <edges id="154" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.8/@node_objs.3"/>
+  <edges id="155" source_obj="//@blocks.8/@node_objs.3" sink_obj="//@blocks.8/@node_objs.4"/>
+  <edges id="157" source_obj="//@blocks.8/@node_objs.2" sink_obj="//@blocks.8/@node_objs.5"/>
+  <edges id="158" source_obj="//@blocks.8/@node_objs.4" sink_obj="//@blocks.8/@node_objs.5"/>
+  <edges id="159" source_obj="//@blocks.8/@node_objs.5" sink_obj="//@blocks.8/@node_objs.6"/>
+  <edges id="160" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.8/@node_objs.6"/>
+  <edges id="161" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.8/@node_objs.6"/>
+  <edges id="163" source_obj="//@blocks.9/@node_objs.0" sink_obj="//@ports.4"/>
+  <edges id="166" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.9/@node_objs.1"/>
+  <edges id="167" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.10/@node_objs.0"/>
+  <edges id="169" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.10/@node_objs.1"/>
+  <edges id="170" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.10/@node_objs.1"/>
+  <edges id="171" source_obj="//@blocks.10/@node_objs.1" sink_obj="//@blocks.10/@node_objs.2"/>
+  <edges id="172" source_obj="//@blocks.10/@node_objs.0" sink_obj="//@blocks.10/@node_objs.2"/>
+  <edges id="173" source_obj="//@blocks.10/@node_objs.2" sink_obj="//@blocks.10/@node_objs.3"/>
+  <edges id="174" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.10/@node_objs.3"/>
+  <edges id="175" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.10/@node_objs.3"/>
+  <edges id="177" source_obj="//@blocks.11/@node_objs.0" sink_obj="//@ports.4"/>
+  <edges id="180" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.11/@node_objs.1"/>
+  <edges id="182" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.12/@node_objs.0"/>
+  <edges id="184" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.12/@node_objs.0"/>
+  <edges id="186" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.12/@node_objs.0"/>
+  <edges id="188" source_obj="//@blocks.12/@node_objs.1" sink_obj="//@ports.6"/>
+  <edges id="189" source_obj="//@blocks.12/@node_objs.0" sink_obj="//@blocks.12/@node_objs.1"/>
+  <edges id="350" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.2"/>
+  <edges id="351" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="352" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.8"/>
+  <edges id="353" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.4"/>
+  <edges id="354" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="355" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.6"/>
+  <edges id="356" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.5"/>
+  <edges id="357" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.6"/>
+  <edges id="358" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5"/>
+  <edges id="359" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.8"/>
+  <edges id="360" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.7"/>
+  <edges id="361" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.8"/>
+  <edges id="362" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.8"/>
+  <edges id="363" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.10"/>
+  <edges id="364" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.9"/>
+  <edges id="365" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.12"/>
+  <edges id="366" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.11"/>
+  <edges id="367" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.12"/>
+  <edges id="368" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.12"/>
+  <edges id="369" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.9/@node_objs.0"/>
+  <edges id="370" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.11/@node_objs.0"/>
+  <edges id="371" edge_type="VirtEdge" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.9/@node_objs.0"/>
+  <edges id="372" edge_type="VirtEdge" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.11/@node_objs.0"/>
+  <edges id="373" edge_type="VirtEdge" source_obj="//@blocks.7/@node_objs.0" sink_obj="//@blocks.9/@node_objs.0"/>
+  <edges id="374" edge_type="VirtEdge" source_obj="//@blocks.7/@node_objs.0" sink_obj="//@blocks.11/@node_objs.0"/>
+  <blocks id="32" name="block_32" type="BlockType">
+    <controlOutputObjs>_Z5rule5bbbbPi.exit</controlOutputObjs>
+    <controlOutputObjs>.critedge</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="J_read" lineNumber="41" originalName="J" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." coreId="0" contextFuncName="intersection" bitwidth="1" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="41" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="intersection"/>
+      <dataInputObjs>J</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <dataOutputObjs>xor</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="S_read" lineNumber="41" originalName="S" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." coreId="0" contextFuncName="intersection" bitwidth="1" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="41" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="intersection"/>
+      <dataInputObjs>S</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <dataOutputObjs>xor</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="D_read" lineNumber="41" originalName="D" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." coreId="1202097936" contextFuncName="intersection" bitwidth="1" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="41" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="intersection"/>
+      <dataInputObjs>D</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="Stg_read" lineNumber="41" originalName="Stg" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." coreId="1658138032" contextFuncName="intersection" bitwidth="1" opcode="read" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="41" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="intersection"/>
+      <dataInputObjs>Stg</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>xor</dataOutputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="or_ln26" lineNumber="26" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." rtlName="or_ln26_fu_135_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="rule4" bitwidth="1" opcode="or" m_display="0" m_delay="0.97" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="26" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule4"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>xor</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="or_ln34" lineNumber="34" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." rtlName="or_ln34_fu_141_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="rule5" bitwidth="1" opcode="or" m_display="0" m_topoIndex="6" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="34" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule5"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="or_ln34_1" lineNumber="34" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." rtlName="or_ln34_1_fu_147_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="rule5" bitwidth="1" opcode="or" m_display="0" m_delay="0.97" m_topoIndex="7" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="34" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule5"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataInputObjs>or</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="br_ln34" lineNumber="34" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." coreId="0" contextFuncName="rule5" opcode="br" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="34" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule5"/>
+      <dataInputObjs>or</dataInputObjs>
+      <controlInputObjs>.critedge</controlInputObjs>
+      <controlInputObjs>_Z5rule5bbbbPi.exit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="Tema1/intersection_semaphores.cpp">
+      <validLinenumbers>41</validLinenumbers>
+      <validLinenumbers>26</validLinenumbers>
+      <validLinenumbers>34</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="35" name=".critedge" type="BlockType">
+    <controlInputObjs>block_32</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>_Z5rule1bbPi.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="Regula_write_ln35" lineNumber="35" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." coreId="1604395280" contextFuncName="rule5" opcode="write" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="35" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule5"/>
+      <dataOutputObjs>Regula</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="br_ln0" coreId="1604391736" opcode="br" m_display="0" m_delay="1.61" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <controlInputObjs>_Z5rule1bbPi.exit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="Tema1/intersection_semaphores.cpp">
+      <validLinenumbers>35</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="40" name="_Z5rule5bbbbPi.exit" type="BlockType">
+    <controlInputObjs>block_32</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_46</controlOutputObjs>
+    <controlOutputObjs>block_44</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="xor_ln10" lineNumber="10" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." rtlName="xor_ln10_fu_153_p2" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="rule2" bitwidth="1" opcode="xor" m_display="0" m_delay="0.97" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="10" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule2"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="and_ln10" lineNumber="10" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." rtlName="and_ln10_fu_159_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="rule2" bitwidth="1" opcode="and" m_display="0" m_delay="0.97" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="10" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule2"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>xor</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="and_ln10_1" lineNumber="10" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." rtlName="and_ln10_1_fu_165_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="rule2" bitwidth="1" opcode="and" m_display="0" m_delay="0.97" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="10" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule2"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="br_ln10" lineNumber="10" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="rule2" opcode="br" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="10" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule2"/>
+      <dataInputObjs>and</dataInputObjs>
+      <controlInputObjs>block_44</controlInputObjs>
+      <controlInputObjs>block_46</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="Tema1/intersection_semaphores.cpp">
+      <validLinenumbers>10</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="44" name="block_44" type="BlockType">
+    <controlInputObjs>_Z5rule5bbbbPi.exit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.critedge29</controlOutputObjs>
+    <controlOutputObjs>_Z5rule2bbbbPi.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="or_ln10" lineNumber="10" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." rtlName="or_ln10_fu_171_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="rule2" bitwidth="1" opcode="or" m_display="0" m_topoIndex="15" m_clusterGroupNumber="2">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="10" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule2"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>xor</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="or_ln10_1" lineNumber="10" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." rtlName="or_ln10_1_fu_177_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="rule2" bitwidth="1" opcode="or" m_display="0" m_delay="0.97" m_topoIndex="16" m_clusterGroupNumber="2">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="10" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule2"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="br_ln10" lineNumber="10" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." coreId="0" contextFuncName="rule2" opcode="br" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="10" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule2"/>
+      <dataInputObjs>or</dataInputObjs>
+      <controlInputObjs>_Z5rule2bbbbPi.exit</controlInputObjs>
+      <controlInputObjs>.critedge29</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="Tema1/intersection_semaphores.cpp">
+      <validLinenumbers>10</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="46" name="block_46" type="BlockType">
+    <controlInputObjs>_Z5rule5bbbbPi.exit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.critedge29</controlOutputObjs>
+    <controlOutputObjs>_Z5rule2bbbbPi.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="br_ln10" lineNumber="10" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." coreId="0" contextFuncName="rule2" opcode="br" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="10" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule2"/>
+      <dataInputObjs>and</dataInputObjs>
+      <controlInputObjs>_Z5rule2bbbbPi.exit</controlInputObjs>
+      <controlInputObjs>.critedge29</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="Tema1/intersection_semaphores.cpp">
+      <validLinenumbers>10</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="49" name="_Z5rule2bbbbPi.exit" type="BlockType">
+    <controlInputObjs>block_44</controlInputObjs>
+    <controlInputObjs>block_46</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>_Z5rule1bbPi.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="Regula_write_ln11" lineNumber="11" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." coreId="0" contextFuncName="rule2" opcode="write" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="11" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule2"/>
+      <dataOutputObjs>Regula</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="br_ln51" lineNumber="51" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." coreId="0" contextFuncName="intersection" opcode="br" m_display="0" m_delay="1.61" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="51" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="intersection"/>
+      <controlInputObjs>_Z5rule1bbPi.exit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="Tema1/intersection_semaphores.cpp">
+      <validLinenumbers>11</validLinenumbers>
+      <validLinenumbers>51</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="52" name=".critedge29" type="BlockType">
+    <controlInputObjs>block_44</controlInputObjs>
+    <controlInputObjs>block_46</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_55</controlOutputObjs>
+    <controlOutputObjs>_Z5rule1bbPi.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="and_ln2" lineNumber="2" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." rtlName="and_ln2_fu_183_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="rule1" bitwidth="1" opcode="and" m_display="0" m_delay="0.97" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="2" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule1"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="br_ln2" lineNumber="2" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." coreId="3212608" contextFuncName="rule1" opcode="br" m_display="0" m_delay="1.61" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="2" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule1"/>
+      <dataInputObjs>and</dataInputObjs>
+      <controlInputObjs>_Z5rule1bbPi.exit</controlInputObjs>
+      <controlInputObjs>block_55</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="Tema1/intersection_semaphores.cpp">
+      <validLinenumbers>2</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="55" name="block_55" type="BlockType">
+    <controlInputObjs>.critedge29</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>_Z5rule1bbPi.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="Regula_write_ln3" lineNumber="3" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." coreId="3216448" contextFuncName="rule1" opcode="write" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="3" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule1"/>
+      <dataOutputObjs>Regula</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="br_ln4" lineNumber="4" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." coreId="1654417088" contextFuncName="rule1" opcode="br" m_display="0" m_delay="1.61" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="4" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule1"/>
+      <controlInputObjs>_Z5rule1bbPi.exit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="Tema1/intersection_semaphores.cpp">
+      <validLinenumbers>3</validLinenumbers>
+      <validLinenumbers>4</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="63" name="_Z5rule1bbPi.exit" type="BlockType">
+    <controlInputObjs>.critedge</controlInputObjs>
+    <controlInputObjs>_Z5rule2bbbbPi.exit</controlInputObjs>
+    <controlInputObjs>.critedge29</controlInputObjs>
+    <controlInputObjs>block_55</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>_Z5rule3bbbbPi.exit</controlOutputObjs>
+    <controlOutputObjs>.critedge30</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="empty" coreId="0" bitwidth="1" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <dataOutputObjs>write</dataOutputObjs>
+      <controlInputObjs>_Z5rule2bbbbPi.exit</controlInputObjs>
+      <controlInputObjs>.critedge</controlInputObjs>
+      <controlInputObjs>block_55</controlInputObjs>
+      <controlInputObjs>.critedge29</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="EW_write_ln51" lineNumber="51" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="intersection" opcode="write" nodeLabel="1.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="51" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="intersection"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>EW</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="and_ln18" lineNumber="18" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." rtlName="and_ln18_fu_189_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="rule3" bitwidth="1" opcode="and" m_display="0" m_topoIndex="25" m_clusterGroupNumber="3">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="18" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule3"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="and_ln18_1" lineNumber="18" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." rtlName="and_ln18_1_fu_195_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="rule3" bitwidth="1" opcode="and" m_display="0" m_topoIndex="26" m_clusterGroupNumber="3">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="18" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule3"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>xor</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="xor_ln18" lineNumber="18" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." rtlName="xor_ln18_fu_201_p2" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="rule3" bitwidth="1" opcode="xor" m_display="0" m_topoIndex="27" m_clusterGroupNumber="3">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="18" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule3"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="or_ln18" lineNumber="18" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." rtlName="or_ln18_fu_207_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="rule3" bitwidth="1" opcode="or" m_display="0" m_delay="0.97" m_topoIndex="28" m_clusterGroupNumber="3">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="18" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule3"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>xor</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="br_ln18" lineNumber="18" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." coreId="0" contextFuncName="rule3" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="18" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule3"/>
+      <dataInputObjs>or</dataInputObjs>
+      <controlInputObjs>.critedge30</controlInputObjs>
+      <controlInputObjs>_Z5rule3bbbbPi.exit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="Tema1/intersection_semaphores.cpp">
+      <validLinenumbers>51</validLinenumbers>
+      <validLinenumbers>18</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="66" name=".critedge30" type="BlockType">
+    <controlInputObjs>_Z5rule1bbPi.exit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>_Z5rule4bbbbPi.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="Regula_write_ln19" lineNumber="19" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." coreId="0" contextFuncName="rule3" opcode="write" nodeLabel="1.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="19" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule3"/>
+      <dataOutputObjs>Regula</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="br_ln0" coreId="0" opcode="br" nodeLabel="1.0" m_display="0" m_delay="1.61" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <controlInputObjs>_Z5rule4bbbbPi.exit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="Tema1/intersection_semaphores.cpp">
+      <validLinenumbers>19</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="71" name="_Z5rule3bbbbPi.exit" type="BlockType">
+    <controlInputObjs>_Z5rule1bbPi.exit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_74</controlOutputObjs>
+    <controlOutputObjs>_Z5rule4bbbbPi.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="xor_ln26" lineNumber="26" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." rtlName="xor_ln26_fu_213_p2" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="rule4" bitwidth="1" opcode="xor" nodeLabel="1.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="4">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="26" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule4"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="68" name="xor_ln26_1" lineNumber="26" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." rtlName="xor_ln26_1_fu_218_p2" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="rule4" bitwidth="1" opcode="xor" nodeLabel="1.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="4">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="26" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule4"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="69" name="and_ln26" lineNumber="26" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." rtlName="and_ln26_fu_222_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="rule4" bitwidth="1" opcode="and" nodeLabel="1.0" m_display="0" m_delay="0.97" m_topoIndex="36" m_clusterGroupNumber="4">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="26" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule4"/>
+      <dataInputObjs>xor</dataInputObjs>
+      <dataInputObjs>xor</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="br_ln26" lineNumber="26" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." coreId="0" contextFuncName="rule4" opcode="br" nodeLabel="1.0" m_display="0" m_delay="1.61" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="26" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule4"/>
+      <dataInputObjs>and</dataInputObjs>
+      <controlInputObjs>_Z5rule4bbbbPi.exit</controlInputObjs>
+      <controlInputObjs>block_74</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="Tema1/intersection_semaphores.cpp">
+      <validLinenumbers>26</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="74" name="block_74" type="BlockType">
+    <controlInputObjs>_Z5rule3bbbbPi.exit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>_Z5rule4bbbbPi.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="Regula_write_ln27" lineNumber="27" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." coreId="0" contextFuncName="rule4" opcode="write" nodeLabel="1.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="27" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule4"/>
+      <dataOutputObjs>Regula</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="br_ln28" lineNumber="28" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." coreId="0" contextFuncName="rule4" opcode="br" nodeLabel="1.0" m_display="0" m_delay="1.61" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="28" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="rule4"/>
+      <controlInputObjs>_Z5rule4bbbbPi.exit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="Tema1/intersection_semaphores.cpp">
+      <validLinenumbers>27</validLinenumbers>
+      <validLinenumbers>28</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="78" name="_Z5rule4bbbbPi.exit" type="BlockType">
+    <controlInputObjs>.critedge30</controlInputObjs>
+    <controlInputObjs>_Z5rule3bbbbPi.exit</controlInputObjs>
+    <controlInputObjs>block_74</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="empty_5" coreId="0" bitwidth="1" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <dataOutputObjs>write</dataOutputObjs>
+      <controlInputObjs>.critedge30</controlInputObjs>
+      <controlInputObjs>block_74</controlInputObjs>
+      <controlInputObjs>_Z5rule3bbbbPi.exit</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="NS_write_ln52" lineNumber="52" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." coreId="0" contextFuncName="intersection" opcode="write" nodeLabel="1.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="52" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="intersection"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>NS</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="_ln53" lineNumber="53" fileName="Tema1/intersection_semaphores.cpp" fileDirectory=".." coreId="0" contextFuncName="intersection" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tema1/intersection_semaphores.cpp" linenumber="53" fileDirectory="D:\Facultate\Anul3\CN2\Tema1" functionName="intersection"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="Tema1/intersection_semaphores.cpp">
+      <validLinenumbers>52</validLinenumbers>
+      <validLinenumbers>53</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <regnodes realName="empty_5_reg_120">
+    <nodeIds>75</nodeIds>
+  </regnodes>
+  <regnodes realName="or_ln26_reg_238">
+    <nodeIds>28</nodeIds>
+  </regnodes>
+  <regnodes realName="or_ln18_reg_258">
+    <nodeIds>61</nodeIds>
+  </regnodes>
+  <regnodes realName="empty_reg_100">
+    <nodeIds>56</nodeIds>
+  </regnodes>
+  <regnodes realName="J_read_reg_228">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <regnodes realName="S_read_reg_233">
+    <nodeIds>25</nodeIds>
+  </regnodes>
+  <expressionNodes realName="or_ln34_1_fu_147">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln2_fu_183">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln18_1_fu_195">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln10_1_fu_165">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln18_fu_207">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln26_1_fu_218">
+    <nodeIds>68</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln34_fu_141">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_5_phi_fu_123">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln26_fu_135">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln10_1_fu_177">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln26_fu_213">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln10_fu_153">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln10_fu_159">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln18_fu_189">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln10_fu_171">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_phi_fu_105">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln18_fu_201">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln26_fu_222">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="D_read_read_fu_62">
+    <nodeIds>26</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln51_write_fu_84">
+    <nodeIds>57</nodeIds>
+  </ioNodes>
+  <ioNodes realName="J_read_read_fu_50">
+    <nodeIds>24</nodeIds>
+  </ioNodes>
+  <ioNodes realName="Stg_read_read_fu_68">
+    <nodeIds>27</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln52_write_fu_93">
+    <nodeIds>76</nodeIds>
+  </ioNodes>
+  <ioNodes realName="S_read_read_fu_56">
+    <nodeIds>25</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_74">
+    <nodeIds>33</nodeIds>
+    <nodeIds>47</nodeIds>
+    <nodeIds>53</nodeIds>
+    <nodeIds>64</nodeIds>
+    <nodeIds>72</nodeIds>
+  </ioNodes>
+  <ioPorts name="D">
+    <contents name="read">
+      <nodeIds>26</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="EW">
+    <contents name="write">
+      <nodeIds>57</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="J">
+    <contents name="read">
+      <nodeIds>24</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="NS">
+    <contents name="write">
+      <nodeIds>76</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="Regula">
+    <contents name="write">
+      <nodeIds>33</nodeIds>
+      <nodeIds>47</nodeIds>
+      <nodeIds>53</nodeIds>
+      <nodeIds>64</nodeIds>
+      <nodeIds>72</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="S">
+    <contents name="read">
+      <nodeIds>25</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="Stg">
+    <contents name="read">
+      <nodeIds>27</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="intersection" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="1">
+      <basicBlocks>32</basicBlocks>
+      <basicBlocks>35</basicBlocks>
+      <basicBlocks>40</basicBlocks>
+      <basicBlocks>44</basicBlocks>
+      <basicBlocks>46</basicBlocks>
+      <basicBlocks>49</basicBlocks>
+      <basicBlocks>52</basicBlocks>
+      <basicBlocks>55</basicBlocks>
+      <basicBlocks>63</basicBlocks>
+      <basicBlocks>66</basicBlocks>
+      <basicBlocks>71</basicBlocks>
+      <basicBlocks>74</basicBlocks>
+      <basicBlocks>78</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

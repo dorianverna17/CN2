@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op xor" ID="" IMPL="auto" LATENCY="0" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln6_fu_47_p2" SOURCE="functii_inline/functii_inline.cpp:6" VARIABLE="xor_ln6" MODULE="fi" LOOP="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op and" ID="" IMPL="auto" LATENCY="0" OPTYPE="and" PRAGMA="" RTLNAME="c" SOURCE="functii_inline/functii_inline.cpp:2" VARIABLE="and_ln2" MODULE="fi" LOOP="" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

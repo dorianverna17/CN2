@@ -1,0 +1,67 @@
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Dorian' on host 'desktop-fb7fh5h' (Windows NT_amd64 version 6.2) on Sun Feb 06 11:56:19 +0200 2022
+INFO: [HLS 200-10] In directory 'D:/Facultate/Anul3/CN2/exemplu2_curs_practic2'
+Sourcing Tcl script 'D:/Facultate/Anul3/CN2/exemplu2_curs_practic2/sapte_segmente/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: open_project sapte_segmente 
+INFO: [HLS 200-10] Opening project 'D:/Facultate/Anul3/CN2/exemplu2_curs_practic2/sapte_segmente'.
+INFO: [HLS 200-1510] Running: set_top seven_segments 
+INFO: [HLS 200-1510] Running: add_files seven_segments.cpp 
+INFO: [HLS 200-10] Adding design file 'seven_segments.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files seven_segments.h 
+INFO: [HLS 200-10] Adding design file 'seven_segments.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb seven_segments_tb.cpp 
+INFO: [HLS 200-10] Adding test bench file 'seven_segments_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb seven_segments_tb.h 
+INFO: [HLS 200-10] Adding test bench file 'seven_segments_tb.h' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'D:/Facultate/Anul3/CN2/exemplu2_curs_practic2/sapte_segmente/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a100t-csg324-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7a100tcsg324-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../seven_segments_tb.cpp in debug mode
+   Generating csim.exe
+In file included from D:/Xilinx/Vitis_HLS/2021.1/include/floating_point_v7_0_bitacc_cmodel.h:144:0,
+                 from D:/Xilinx/Vitis_HLS/2021.1/include/hls_fpo.h:189,
+                 from D:/Xilinx/Vitis_HLS/2021.1/include/hls_half_fpo.h:64,
+                 from D:/Xilinx/Vitis_HLS/2021.1/include/hls_half.h:71,
+                 from D:/Xilinx/Vitis_HLS/2021.1/include/etc/ap_private.h:91,
+                 from D:/Xilinx/Vitis_HLS/2021.1/include/ap_common.h:653,
+                 from D:/Xilinx/Vitis_HLS/2021.1/include/ap_int.h:55,
+                 from ../../../../seven_segments.h:4,
+                 from ../../../../seven_segments_tb.h:4,
+                 from ../../../../seven_segments_tb.cpp:1:
+D:/Xilinx/Vitis_HLS/2021.1/include/gmp.h:63:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from D:/Xilinx/Vitis_HLS/2021.1/include/hls_fpo.h:189:0,
+                 from D:/Xilinx/Vitis_HLS/2021.1/include/hls_half_fpo.h:64,
+                 from D:/Xilinx/Vitis_HLS/2021.1/include/hls_half.h:71,
+                 from D:/Xilinx/Vitis_HLS/2021.1/include/etc/ap_private.h:91,
+                 from D:/Xilinx/Vitis_HLS/2021.1/include/ap_common.h:653,
+                 from D:/Xilinx/Vitis_HLS/2021.1/include/ap_int.h:55,
+                 from ../../../../seven_segments.h:4,
+                 from ../../../../seven_segments_tb.h:4,
+                 from ../../../../seven_segments_tb.cpp:1:
+D:/Xilinx/Vitis_HLS/2021.1/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+digit = 0 cod 7 segmente = 192 anodes = 14
+digit = 1 cod 7 segmente = 249 anodes = 14
+digit = 2 cod 7 segmente = 164 anodes = 14
+digit = 3 cod 7 segmente = 176 anodes = 14
+digit = 4 cod 7 segmente = 153 anodes = 14
+digit = 5 cod 7 segmente = 146 anodes = 14
+digit = 6 cod 7 segmente = 130 anodes = 14
+digit = 7 cod 7 segmente = 248 anodes = 14
+digit = 8 cod 7 segmente = 128 anodes = 14
+digit = 9 cod 7 segmente = 144 anodes = 14
+Test trecut cu succes!
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.687 seconds; current allocated memory: 1005.160 MB.

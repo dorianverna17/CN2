@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="intersection_semaphores.cpp" path="D:\Facultate\Anul3\CN2\Tema1\Tema1\intersection_semaphores.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="intersection_semaphores_tb.h" path="D:\Facultate\Anul3\CN2\Tema1\Tema1\intersection_semaphores_tb.h"/>
+    <originFiles name="intersection_semaphores_tb.cpp" path="D:\Facultate\Anul3\CN2\Tema1\Tema1\intersection_semaphores_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

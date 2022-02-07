@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Facultate/Anul3/CN2/Laboratoare/Laborator1/Laborator1/Laborator1.srcs/sources_1/new/mux_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_4_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Facultate/Anul3/CN2/Laboratoare/Laborator1/Laborator1/Laborator1.srcs/sim_1/new/mux_4_1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_4_1_tb
+INFO: [VRFC 10-2458] undeclared symbol Y, assumed default net type wire [D:/Facultate/Anul3/CN2/Laboratoare/Laborator1/Laborator1/Laborator1.srcs/sim_1/new/mux_4_1_tb.v:26]

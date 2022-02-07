@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Facultate/Anul3/CN2/Laboratoare/Laborator3/Laborator3/Laborator3.srcs/sources_1/new/fsm1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Facultate/Anul3/CN2/Laboratoare/Laborator3/Laborator3/Laborator3.srcs/sim_1/new/fsm1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm1_tb
+INFO: [VRFC 10-2458] undeclared symbol out, assumed default net type wire [D:/Facultate/Anul3/CN2/Laboratoare/Laborator3/Laborator3/Laborator3.srcs/sim_1/new/fsm1_tb.v:32]

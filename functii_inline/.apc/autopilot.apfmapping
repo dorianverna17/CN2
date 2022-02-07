@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="functii_inline.cpp" path="D:\Facultate\Anul3\CN2\functii_inline\functii_inline.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="functii_inline_tb.h" path="D:\Facultate\Anul3\CN2\functii_inline\functii_inline_tb.h"/>
+    <originFiles name="functii_inline_tb.cpp" path="D:\Facultate\Anul3\CN2\functii_inline\functii_inline_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,85 @@
+
+
+================================================================
+== Synthesis Summary Report of 'intersection'
+================================================================
++ General Information: 
+    * Date:           Fri Jan 28 20:21:56 2022
+    * Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:33 MDT 2021)
+    * Project:        Tema1
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: artix7
+    * Target device:  xc7a100t-csg324-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------+------+------+---------+--------+----------+---------+------+----------+------+----+---------+----------+-----+
+    |     Modules    | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |         |          |     |
+    |     & Loops    | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|    FF   |    LUT   | URAM|
+    +----------------+------+------+---------+--------+----------+---------+------+----------+------+----+---------+----------+-----+
+    |+ intersection  |     -|  4.71|        1|  10.000|         -|        2|     -|        no|     -|   -|  5 (~0%)|  83 (~0%)|    -|
+    +----------------+------+------+---------+--------+----------+---------+------+----------+------+----+---------+----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* REGISTER
++-----------+---------+----------+
+| Interface | Mode    | Bitwidth |
++-----------+---------+----------+
+| D         | ap_none | 1        |
+| EW        | ap_none | 1        |
+| J         | ap_none | 1        |
+| NS        | ap_none | 1        |
+| Regula    | ap_none | 32       |
+| S         | ap_none | 1        |
+| Stg       | ap_none | 1        |
++-----------+---------+----------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+--------+
+| Interface | Type         | Ports  |
++-----------+--------------+--------+
+| ap_clk    | clock        | ap_clk |
+| ap_rst    | reset        | ap_rst |
+| ap_ctrl   | ap_ctrl_none |        |
++-----------+--------------+--------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| Stg      | in        | bool     |
+| D        | in        | bool     |
+| S        | in        | bool     |
+| J        | in        | bool     |
+| Regula   | out       | int*     |
+| EW       | out       | bool*    |
+| NS       | out       | bool*    |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+---------+---------+
+| Argument | HW Name | HW Type |
++----------+---------+---------+
+| Stg      | Stg     | port    |
+| D        | D       | port    |
+| S        | S       | port    |
+| J        | J       | port    |
+| Regula   | Regula  | port    |
+| EW       | EW      | port    |
+| NS       | NS      | port    |
++----------+---------+---------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+

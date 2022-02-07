@@ -1,0 +1,8 @@
+<VitisHLS:BurstInfo>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="Tema1/intersection_semaphores.cpp:27:11" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by Regula" ID="bb13.store.0" VarName="Regula"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="Tema1/intersection_semaphores.cpp:19:11" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by Regula" ID=".critedge30.store.0" VarName="Regula"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="Tema1/intersection_semaphores.cpp:35:11" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by Regula" ID=".critedge.store.0" VarName="Regula"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="Tema1/intersection_semaphores.cpp:11:11" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by Regula" ID="_Z5rule2bbbbPi.exit.store.0" VarName="Regula"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="Tema1/intersection_semaphores.cpp:3:11" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by Regula" ID="bb7.store.0" VarName="Regula"/>
+</VitisHLS:BurstInfo>
+

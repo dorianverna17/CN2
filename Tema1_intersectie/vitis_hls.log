@@ -1,0 +1,30 @@
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Dorian' on host 'desktop-fb7fh5h' (Windows NT_amd64 version 6.2) on Fri Jan 28 20:22:54 +0200 2022
+INFO: [HLS 200-10] In directory 'D:/Facultate/Anul3/CN2/Tema1'
+Sourcing Tcl script 'D:/Facultate/Anul3/CN2/Tema1/Tema1/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: open_project Tema1 
+INFO: [HLS 200-10] Opening project 'D:/Facultate/Anul3/CN2/Tema1/Tema1'.
+INFO: [HLS 200-1510] Running: set_top intersection 
+INFO: [HLS 200-1510] Running: add_files Tema1/intersection_semaphores.cpp 
+INFO: [HLS 200-10] Adding design file 'Tema1/intersection_semaphores.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb Tema1/intersection_semaphores_tb.h -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'Tema1/intersection_semaphores_tb.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb Tema1/intersection_semaphores_tb.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'Tema1/intersection_semaphores_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'D:/Facultate/Anul3/CN2/Tema1/Tema1/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a100t-csg324-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7a100t-csg324-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../intersection_semaphores.cpp in debug mode
+   Generating csim.exe
+Testare incheiata cu SUCCES!
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 2.957 seconds; current allocated memory: 1005.179 MB.

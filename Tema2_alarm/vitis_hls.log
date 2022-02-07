@@ -1,0 +1,67 @@
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Dorian' on host 'desktop-fb7fh5h' (Windows NT_amd64 version 6.2) on Mon Feb 07 23:38:32 +0200 2022
+INFO: [HLS 200-10] In directory 'D:/Facultate/Anul3/CN2/Tema2'
+Sourcing Tcl script 'D:/Facultate/Anul3/CN2/Tema2/Tema2/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: open_project Tema2 
+INFO: [HLS 200-10] Opening project 'D:/Facultate/Anul3/CN2/Tema2/Tema2'.
+INFO: [HLS 200-1510] Running: set_top alarm 
+INFO: [HLS 200-1510] Running: add_files alarm_house.cpp 
+INFO: [HLS 200-10] Adding design file 'alarm_house.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files alarm_house.h 
+INFO: [HLS 200-10] Adding design file 'alarm_house.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb alarm_house_tb.cpp 
+INFO: [HLS 200-10] Adding test bench file 'alarm_house_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb alarm_house_tb.h 
+INFO: [HLS 200-10] Adding test bench file 'alarm_house_tb.h' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'D:/Facultate/Anul3/CN2/Tema2/Tema2/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a100t-csg324-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7a100tcsg324-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../alarm_house_tb.cpp in debug mode
+   Generating csim.exe
+In file included from D:/Xilinx/Vitis_HLS/2021.1/include/floating_point_v7_0_bitacc_cmodel.h:144:0,
+                 from D:/Xilinx/Vitis_HLS/2021.1/include/hls_fpo.h:189,
+                 from D:/Xilinx/Vitis_HLS/2021.1/include/hls_half_fpo.h:64,
+                 from D:/Xilinx/Vitis_HLS/2021.1/include/hls_half.h:71,
+                 from D:/Xilinx/Vitis_HLS/2021.1/include/etc/ap_private.h:91,
+                 from D:/Xilinx/Vitis_HLS/2021.1/include/ap_common.h:653,
+                 from D:/Xilinx/Vitis_HLS/2021.1/include/ap_int.h:55,
+                 from ../../../../alarm_house.h:4,
+                 from ../../../../alarm_house_tb.h:4,
+                 from ../../../../alarm_house_tb.cpp:1:
+D:/Xilinx/Vitis_HLS/2021.1/include/gmp.h:63:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from D:/Xilinx/Vitis_HLS/2021.1/include/hls_fpo.h:189:0,
+                 from D:/Xilinx/Vitis_HLS/2021.1/include/hls_half_fpo.h:64,
+                 from D:/Xilinx/Vitis_HLS/2021.1/include/hls_half.h:71,
+                 from D:/Xilinx/Vitis_HLS/2021.1/include/etc/ap_private.h:91,
+                 from D:/Xilinx/Vitis_HLS/2021.1/include/ap_common.h:653,
+                 from D:/Xilinx/Vitis_HLS/2021.1/include/ap_int.h:55,
+                 from ../../../../alarm_house.h:4,
+                 from ../../../../alarm_house_tb.h:4,
+                 from ../../../../alarm_house_tb.cpp:1:
+D:/Xilinx/Vitis_HLS/2021.1/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+O
+O E1 
+O E2 
+O E3 
+O E01 
+O E02 
+Not active!
+Not active!
+Not active!
+Not active!
+Test trecut cu succes!
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.335 seconds; current allocated memory: 1005.173 MB.

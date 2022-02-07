@@ -1,0 +1,14 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+D:/Facultate/Anul3/CN2/Laboratoare/Laborator2/TemaLab2/TemaLab2.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+D:/Facultate/Anul3/CN2/Laboratoare/Laborator2/TemaLab2/TemaLab2.srcs/sim_1/new/alu_tb.v,1635232627,verilog,,,,alu_tb,,,,,,,,
+D:/Facultate/Anul3/CN2/Laboratoare/Laborator2/TemaLab2/TemaLab2.srcs/sim_1/new/counter_up_down_tb.v,1635232509,verilog,,,,counter_up_down_tb,,,,,,,,
+D:/Facultate/Anul3/CN2/Laboratoare/Laborator2/TemaLab2/TemaLab2.srcs/sources_1/new/add_module.v,1635198988,verilog,,D:/Facultate/Anul3/CN2/Laboratoare/Laborator2/TemaLab2/TemaLab2.srcs/sources_1/new/alu.v,,add_module,,,,,,,,
+D:/Facultate/Anul3/CN2/Laboratoare/Laborator2/TemaLab2/TemaLab2.srcs/sources_1/new/alu.v,1635847584,verilog,,D:/Facultate/Anul3/CN2/Laboratoare/Laborator2/TemaLab2/TemaLab2.srcs/sources_1/new/multiply_module.v,,alu,,,,,,,,
+D:/Facultate/Anul3/CN2/Laboratoare/Laborator2/TemaLab2/TemaLab2.srcs/sources_1/new/multiply_module.v,1635198944,verilog,,D:/Facultate/Anul3/CN2/Laboratoare/Laborator2/TemaLab2/TemaLab2.srcs/sources_1/new/mux2_1.v,,multiply_module,,,,,,,,
+D:/Facultate/Anul3/CN2/Laboratoare/Laborator2/TemaLab2/TemaLab2.srcs/sources_1/new/mux2_1.v,1635233814,verilog,,D:/Facultate/Anul3/CN2/Laboratoare/Laborator2/TemaLab2/TemaLab2.srcs/sources_1/new/mux3_1.v,,mux2_1,,,,,,,,
+D:/Facultate/Anul3/CN2/Laboratoare/Laborator2/TemaLab2/TemaLab2.srcs/sources_1/new/mux3_1.v,1635203592,verilog,,D:/Facultate/Anul3/CN2/Laboratoare/Laborator2/TemaLab2/TemaLab2.srcs/sources_1/new/substract_module.v,,mux3_1,,,,,,,,
+D:/Facultate/Anul3/CN2/Laboratoare/Laborator2/TemaLab2/TemaLab2.srcs/sources_1/new/substract_module.v,1635199010,verilog,,D:/Facultate/Anul3/CN2/Laboratoare/Laborator2/TemaLab2/TemaLab2.srcs/sim_1/new/alu_tb.v,,substract_module,,,,,,,,
+D:/Facultate/Anul3/CN2/Laboratoare/Laborator2/TemaLab2/TemaLab2.srcs/sources_1/new/up_down_counter.v,1635232322,verilog,,D:/Facultate/Anul3/CN2/Laboratoare/Laborator2/TemaLab2/TemaLab2.srcs/sim_1/new/counter_up_down_tb.v,,counter_up_down,,,,,,,,
